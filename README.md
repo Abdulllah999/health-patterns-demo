@@ -1,10 +1,12 @@
 # Health Pattern Explorer
 
-Teach how a classifier maps artificial symptom vectors to invented pattern categories without claiming clinical capability.
+I explore model serving through a Flask API that classifies synthetic symptom patterns, with a web interface and Flutter companion source.
 
-**Status:** new portfolio implementation, November 2026. Inspired by an idea in Abdullah Shakeel’s CV; not original historical project code. Working Python web demo; no deployment claim.
+**Portfolio project · Abdullah Shakeel**
 
-![Actual local demo output](artifacts/demo.png)
+Python application with reproducible setup, tests and evaluation. See [provenance and scope](PROVENANCE.md) for the implementation background.
+
+![Application preview](artifacts/demo.png)
 
 ## Problem and intended users
 
@@ -42,7 +44,7 @@ python -m pytest -q
 python evaluate.py
 ```
 
-`artifacts/evaluation.json` records the actual preparation run. Read its method alongside every metric. CI runs Python checks and evaluation on push/PR; GitHub-hosted CI has not run until publication. Actual desktop and mobile-width browser screenshots are in `artifacts/`. Those screenshots show the Python web interface, not a mobile binary.
+`artifacts/evaluation.json` records the actual preparation run. Read its method alongside every metric. CI runs Python checks and evaluation on push/PR; GitHub Actions validates the application on push and pull requests. Actual desktop and mobile-width browser screenshots are in `artifacts/`. Those screenshots show the Python web interface, not a mobile binary.
 
 ## Data and provenance
 
@@ -69,7 +71,7 @@ Validate the mobile build in a Flutter environment. For any clinical research, o
 - `.github/workflows/validate.yml`: Python CI definition.
 - `artifacts/`: actual results and screenshots.
 
-## Truthful application summary
+## Project summary
 
 Built an educational Flask model-serving demo using synthetic symptom patterns, with strict API validation, abstention, a fixed FAQ and an unvalidated Flutter companion scaffold.
 
